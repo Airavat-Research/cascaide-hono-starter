@@ -1,0 +1,60 @@
+# -----------------------------
+# Dependencies
+# -----------------------------
+node_modules/
+
+# -----------------------------
+# Local Packages & Tarballs
+# -----------------------------
+# Keeps your locally generated cascaide-ts packages out of version control
+
+
+# -----------------------------
+# Environment Variables
+# -----------------------------
+# CRITICAL: Never commit these!
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# -----------------------------
+# Frontend Build Outputs (Vite)
+# -----------------------------
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# -----------------------------
+# Backend Build Outputs (Express/TS)
+# -----------------------------
+backend/dist/
+backend/build/
+
+# -----------------------------
+# Migration Leftovers (Next.js)
+# -----------------------------
+# Just in case any old Next.js build folders are still hiding in the root
+.next/
+out/
+
+# -----------------------------
+# Logs & Diagnostic Reports
+# -----------------------------
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+
+# -----------------------------
+# OS & Editor Files
+# -----------------------------
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/

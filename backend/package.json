@@ -1,0 +1,39 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node -r dotenv/config --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@cascaide-ts/core": "^0.5.1",
+    "@cascaide-ts/helpers": "^0.5.1",
+    "@cascaide-ts/postgres-js": "^0.5.1",
+    "@cascaide-ts/server-hono": "^0.5.1",
+    "@electric-sql/pglite": "^0.4.2",
+    "@google/genai": "^1.45.0",
+    "@tavily/core": "^0.7.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "postgres": "^3.4.8",
+    "react": "^19.2.4",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.4.0",
+    "@types/react": "^19.2.14",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
