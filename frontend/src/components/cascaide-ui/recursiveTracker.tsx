@@ -1,4 +1,3 @@
-'use client';
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { useWorkflow, useCascade } from '@cascaide-ts/react';
 import { createPortal } from 'react-dom';

@@ -34,10 +34,8 @@ buildToolResultMessage
   
     async prep(cascadeContext: WorkflowContext, initialContext: any): Promise<hotelSupervisorPrepOut> {
         const cascadeId = initialContext.cascadeId;
-        console.log("cascadeId :",cascadeId);
-        console.log("cascadeContext :",JSON.stringify(cascadeContext,null,2));
+
         const dataArray = cascadeContext[cascadeId];
-        console.log("dataArray :",JSON.stringify(dataArray,null,2));
         const canonicalHistory = dataArray.flatMap((item: any) => item.history || []);
 
         const history = toProviderHistory('gemini-genai', canonicalHistory);    
@@ -155,7 +153,6 @@ buildToolResultMessage
       const pendingToolCalls = assistantMessage.tool_calls ?? [] as CanonicalToolCall[]
 
 
-      console.log(JSON.stringify(assistantMessage));
       const isDifferent = uiAssistantMessage !== undefined &&
       JSON.stringify(assistantMessage) !== JSON.stringify(uiAssistantMessage);
   

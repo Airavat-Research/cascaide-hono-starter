@@ -214,10 +214,7 @@ export const recursiveSearchToolNode: ServerNodeDefinition<SearchToolPrepOut, Se
       });
     }
     
-  
-    // Log or use the IDs here if needed
-    // console.log('Planned sub-cascades:', delegationTasks.map(t => t.subCascadeId));
-  
+
     // ── 3. Delegation execution ───────────────────────────────────────────
     const delegationResultsPromise = Promise.all(
       delegationTasks.map(async ({ toolCall, subCascadeId }): Promise<{ toolCall: CanonicalToolCall; toolResult: CanonicalMessage }> => {

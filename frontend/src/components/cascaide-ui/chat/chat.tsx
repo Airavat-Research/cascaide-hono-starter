@@ -1,4 +1,3 @@
-'use client';
 import React, { useState, useMemo, useCallback } from 'react';
 import { Menu } from 'lucide-react';
 import { useWorkflow, useCascade } from '@cascaide-ts/react';
