@@ -38,14 +38,14 @@ const AGENTS = [
     label: 'ReAct Search',
     description:
       'A reasoning + acting agent that searches the web iteratively. Great for factual lookups, current events, and research questions.',
-    starter: 'What are the most popular AI models and their stregths and weaknesses?+',
+    starter: 'What are the most popular AI models and their stregths and weaknesses? Run a search to find the latest trends in 2026 (Current year is 2026).',
   },
   {
     id: 'recursiveSearchAgentNode' as AgentType,
     label: 'Recursive ReAct Search',
     description:
       'Breaks complex queries into sub-questions and searches recursively. Use this for in-depth research that needs multiple angles.',
-    starter: 'Give me a detailed report on the causes of World War 2, examined from the perspective of opposing sides',
+    starter: 'Create parallel versions of yourself to research the following AI companies : google, openAI, anthropic and XAI. Instruct the sub agents to further reserach through parallel delegation to look at their latest frontier models as of May 2026, which is the current date.',
   },
 ];
 
@@ -256,3 +256,5 @@ export function InputBar({
     </div>
   );
 }
+
+//force
